@@ -193,7 +193,11 @@ a {
     flex-basis: 42%;
 }
 
-.right-col img {
+.hero-mobile {
+    display: none;
+}
+
+.hero-desktop {
     width: 450px;
     height: 100%;
 }
@@ -258,20 +262,56 @@ a {
 @media only screen and (max-width:375px) {
     .mobile-menu {
         display: block;
+        margin-left: 200px;
     }
     /*about*/
     .about {
-        flex-direction: column;
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
         display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
         margin-top: 40px;
-        padding-right: 20px;
         margin-bottom: 40px;
     }
     .left-col,
     .right-col {
         flex-basis: 100%;
     }
-    .right-col img {
-        width: 200px;
+    .hero-desktop {
+        display: none;
+    }
+    .hero-mobile {
+        display: block;
+        width: 100%;
+    }
+    .about-text h1 {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+    .about-text p {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    .left-col-upper button {
+        margin-bottom: -100px;
+        font-size: 12px;
+    }
+    .social-icons {
+        max-width: 450px;
+        display: inline;
+        padding-top: -70px;
+        vertical-align: text-top;
+    }
+    .social-icons img {
+        width: 55px;
+    }
+    .navlinks {
+        display: none;
+    }
+    .right-div {
+        display: none;
     }
 }
