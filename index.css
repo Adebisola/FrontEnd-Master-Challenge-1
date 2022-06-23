@@ -259,10 +259,14 @@ a {
     color: rgb(90%, 90%, 90%);
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:740px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .mobile-menu {
-        display: block;
-        margin-left: 200px;
+        display: inline;
     }
     /*about*/
     .about {
